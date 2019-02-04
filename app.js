@@ -15,10 +15,7 @@ var app = express();
 var mongoose = require('mongoose');
 
 // Set up default mongoose connection
-var mongoDB = 'mongodb://ryledra:miette@express-locallibrary-tutorial-shard-00-00-i3fsw' +
-  '.mongodb.net:27017,express-locallibrary-tutorial-shard-00-01-i3fsw.mongodb.net:27017,' +
-  'express-locallibrary-tutorial-shard-00-02-i3fsw.mongodb.net:27017/test?ssl=true&' +
-  'replicaSet=express-locallibrary-tutorial-shard-0&authSource=admin&retryWrites=true';
+var mongoDB = 'mongodb+srv://ryledra:miette@express-locallibrary-tutorial-i3fsw.mongodb.net/test?retryWrites=true';
 mongoose.connect(mongoDB);
 // Get Mongoose to use the global promise library
 mongoose.Promise = global.Promise;
