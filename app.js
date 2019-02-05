@@ -16,6 +16,7 @@ var mongoose = require('mongoose');
 
 // Set up default mongoose connection
 var mongoDB = 'mongodb+srv://ryledra:miette@express-locallibrary-tutorial-i3fsw.mongodb.net/test?retryWrites=true';
+
 mongoose.connect(mongoDB);
 // Get Mongoose to use the global promise library
 mongoose.Promise = global.Promise;
